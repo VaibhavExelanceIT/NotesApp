@@ -29,7 +29,6 @@ const NoteSlice = createSlice({
       console.log(data.title);
       console.log(data.description);
 
-      // console.log(state.notes[action.payload.idx]);
       const revisedData = state.notes.map(val => {
         if (val.id == id) {
           return {

@@ -4,6 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import UserReducer from '../slice/UserSlice';
 import NoteReducer from '../slice/NoteSlice';
+import PostReducer from '../slice/PostSlice';
 
 const persistConfig = {
   key: 'root',
@@ -13,6 +14,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
   User: UserReducer,
   Note: NoteReducer,
+  Post: PostReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

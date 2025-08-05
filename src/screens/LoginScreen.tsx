@@ -54,8 +54,8 @@ const LoginScreen = () => {
     <View style={styles.container}>
       <Formik
         initialValues={{
-          email: '',
-          password: '',
+          email: 'vai@gmail.com',
+          password: 'Vai@1234',
         }}
         onSubmit={values => {
           submitHandler(values);

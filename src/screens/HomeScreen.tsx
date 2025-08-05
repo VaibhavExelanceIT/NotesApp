@@ -11,6 +11,7 @@ import {
   TextInput,
   StyleSheet,
   TouchableOpacity,
+  Button,
 } from 'react-native';
 
 import * as Yup from 'yup';
@@ -85,6 +86,10 @@ const HomeScreen = ({route}: any) => {
   return (
     <View style={styles.mainlayout}>
       <View style={styles.upperscreen}>
+        <Button
+          title="Insta clone"
+          onPress={() => navigation.navigate('InstaHome', {email})}
+        />
         <View style={styles.userIcon}>
           <Text style={styles.userIcontext}>{email[0]}</Text>
         </View>
